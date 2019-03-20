@@ -65,7 +65,8 @@ if [ $DOWNLOAD_OPENCV_EXTRAS == "YES" ] ; then
 fi
 
 # Repository setup
-apt-add-repository universe
+apt-get install software-properties-common
+add-apt-repository universe
 apt-get update
 
 # Download dependencies for the desired configuration
